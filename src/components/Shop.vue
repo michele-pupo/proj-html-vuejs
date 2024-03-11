@@ -10,7 +10,7 @@ export default {
     <div id="shop">
         <div id="shop-text">
             <h2>Want to work with us? Send us <i>a message!</i></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repudiandae ex, dolores doloribus, adipisci corrupti mollitia nulla quae, hic voluptatum dolorum debitis quis reiciendis repellendus enim. Voluptatem nisi corporis dolor.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do aiusmod tempor incididunt ut labore et dolore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comma.</p>
         </div>
         <div id="button">
             <button>Contact</button>
@@ -29,7 +29,7 @@ export default {
         #shop-text{
             max-width: 1400px;
             margin: 0 auto;
-            padding-top: 170px;
+            padding-top: 130px;
             text-align: center;
 
             h2{
@@ -57,6 +57,9 @@ export default {
                 border-color: transparent;
                 color: black;
                 font-size: 12px;
+                &:hover{
+                    background-color: #e1c0b0;
+                }
             }
         }
     }
