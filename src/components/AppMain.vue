@@ -1,18 +1,21 @@
 <script>
-import MainImage from './MainImage.vue';
+import Portfolio from './Portfolio.vue';
+import Blog from './Blog.vue';
 
 export default {
     name: 'AppMain',
 
     components: {
-        MainImage,
+        Portfolio,
+        Blog
     }
 }
 
 </script>
 
 <template>
-  <MainImage></MainImage>
+  <Portfolio></Portfolio>
+  <Blog></Blog>
 </template>
 
 <style lang="scss" scoped>

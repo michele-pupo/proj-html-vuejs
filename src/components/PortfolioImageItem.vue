@@ -1,16 +1,17 @@
 <script>
 export default {
-    name: 'ImageItem',
+    name: 'PortfolioImageItem',
 
     props:{
         image: String,
+        name: String
     }
 };
 </script>
 
 <template>
     <div id="single-image">
-        <img :src="image" alt="">
+        <img :src="image" :alt="name">
     </div>
 </template>
 
