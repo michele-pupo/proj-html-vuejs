@@ -25,8 +25,10 @@ export default {
             <div id="day">
                 <h5>{{ number }}</h5>
             </div>
-            <div id="month">
-                <h6>{{ date }}</h6>
+            <div id="month-container">
+                <div id="month">
+                    <h6>{{ date }}</h6>
+                </div>
             </div>
         </div>
    </div>
@@ -72,11 +74,23 @@ export default {
                 }
             }
 
-            #month{
-                background-color: #f3d0c7;
-                width: 80px;
+            #month-container{
+                width: 97px;
+                height: 100px;
                 text-align: center;
-                padding-top: 5px;
+                overflow: hidden;
+                position: relative;
+
+                #month{
+                    width: 120%; 
+                    height: 50%; 
+                    background-color: #f3d0c7;
+                    padding-top: 5px;
+                    position: absolute; 
+                    bottom: 40; 
+                    right: 0; 
+                    clip-path: polygon(15% 0%, 85% 0%, 85% 80%, 50% 60%, 15% 80%);
+                }
             }
         }
     }

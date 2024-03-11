@@ -40,25 +40,49 @@ export default {
 </script>
 
 <template>
-   <div id="image-list">
-        <ElementsImageItem
-            v-for="currentImage in images"
-            :image="currentImage.thumb"
-            :name="currentImage.name"
-            :text="currentImage.text"
-            :signature="currentImage.signature"
-            :number="currentImage.number"
-            :date="currentImage.date">
-        </ElementsImageItem>
-   </div>
+    <div id="container">
+        <div id="image-list">
+            <ElementsImageItem
+                v-for="currentImage in images"
+                :image="currentImage.thumb"
+                :name="currentImage.name"
+                :text="currentImage.text"
+                :signature="currentImage.signature"
+                :number="currentImage.number"
+                :date="currentImage.date">
+            </ElementsImageItem>
+        </div>
+        <div id="top">
+            <img src="../../public/svg/svg-2.svg" alt="">
+        </div>
+    </div>
+
 </template>
 
 <style lang="scss" scoped>
-    #image-list{
-        width: 1300px;
-        margin: 0px auto;
-        display: flex;
-        gap: 30px;
-        padding: 150px 0px 80px 0px;
+    #container{
+        position: relative;
+
+        #image-list{
+            width: 1300px;
+            margin: 0px auto;
+            display: flex;
+            gap: 30px;
+            padding: 150px 0px 80px 0px;
+            
+        }
+
+        #top{
+            width: 30px;
+
+            img{
+                background-color: #c0e1cf;
+                position: absolute;
+                top: 30px;
+                right: 20px;
+                padding: 10px;
+            }
+        }
     }
+    
 </style>
