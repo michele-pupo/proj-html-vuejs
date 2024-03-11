@@ -42,13 +42,13 @@ export default {
 <template>
    <div id="image-list">
         <ElementsImageItem
-        v-for="currentImage in images"
-        :image="currentImage.thumb"
-        :name="currentImage.name"
-        :text="currentImage.text"
-        :signature="currentImage.signature"
-        :number="currentImage.number"
-        :date="currentImage.date">
+            v-for="currentImage in images"
+            :image="currentImage.thumb"
+            :name="currentImage.name"
+            :text="currentImage.text"
+            :signature="currentImage.signature"
+            :number="currentImage.number"
+            :date="currentImage.date">
         </ElementsImageItem>
    </div>
 </template>
@@ -60,6 +60,5 @@ export default {
         display: flex;
         gap: 30px;
         padding: 150px 0px;
-
     }
 </style>
