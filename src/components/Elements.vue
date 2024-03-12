@@ -68,7 +68,7 @@ export default {
             margin: 0px auto;
             display: flex;
             gap: 30px;
-            padding: 150px 0px 80px 0px;
+            padding: 150px 0px 10px 0px;
             
         }
 

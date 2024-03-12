@@ -19,17 +19,13 @@ export default {
         next() {
             if (this.currentIndex < this.images.length - 1) {
                 this.currentIndex++;
-            } else {
-                this.currentIndex = 0; // Se siamo all'ultima immagine, torna alla prima
-            }
-            },
+            } 
+        },
 
             prev() {
             if (this.currentIndex > 0) {
                 this.currentIndex--;
-            } else {
-                this.currentIndex = this.images.length - 1; // Se siamo alla prima immagine, vai all'ultima
-            }
+            } 
         },
 
         goToSlide(index) {
@@ -72,7 +68,6 @@ export default {
 <style lang="scss" scoped>
     .slider {
         display: flex;
-        align-items: center;
         width: 600px;
 
         button{
@@ -89,11 +84,11 @@ export default {
         }
 
         .prev{
-            right: 1000px;
+            right: 1300px;
         }
 
         .next{
-            left: 200px;
+            left: 350px;
         }
 
         .slides {
@@ -106,9 +101,10 @@ export default {
 
                 .image-slide-container{
                     display: flex;
+                    gap: 10px;
                     position: absolute;
-                    top: 130px;
-                    right: 1px;
+                    top: 160px;
+                    right: 50px;
                     z-index: 0;
 
                     #principal1{

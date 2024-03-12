@@ -17,7 +17,7 @@ export default {
             <p>
                 Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consecteur, adipisci velit, sed quia non numquam eius modi.
             </p>
-            <button>
+            <button id="more">
                 Read more
             </button>
         </div>
@@ -30,7 +30,7 @@ export default {
 <style lang="scss" scoped>
     #pages{
         margin: 0 auto;
-        height: 630px;
+        height: 700px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -42,10 +42,25 @@ export default {
 
             h1{
                 font-size: 85px;
+
+                i{
+                    font-weight: bold;
+                }
             }
 
             p{
                 font-size: 22px;
+            }
+
+            #more{
+                background-color: transparent;
+                border: 3px solid #e1c0b0;
+                color: black;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding: 10px 40px;
+                margin-top: 20px;
+
             }
         }
     }

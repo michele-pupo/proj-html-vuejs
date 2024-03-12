@@ -32,5 +32,10 @@ export default {
     a{
         color: black;
         text-decoration: none;
+
+        &:hover{
+            border-bottom: 8px solid #e1c0b0;
+            padding-bottom: 5px;
+        }
     }
 </style>
