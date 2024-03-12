@@ -32,7 +32,7 @@ export default {
 @use '../styles/_variables' as *;
 
     a{
-        color: black;
+        color: #000000;
         text-decoration: none;
 
         &:hover{

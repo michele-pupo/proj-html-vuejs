@@ -70,9 +70,10 @@ export default {
                 height: 50px;
                 text-align: center;
                 padding-top: 5px;
-
+                
                 h5{
-                    font-size: 30px;
+                    font-size: 38px;
+                    font-family: 'Playball', sans-serif;
                 }
             }
 

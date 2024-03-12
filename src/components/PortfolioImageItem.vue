@@ -45,7 +45,7 @@ export default {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-color: white;
+            background-color: #ffffff;
             position: relative;
             top: -530px;
             padding-left: 50px;

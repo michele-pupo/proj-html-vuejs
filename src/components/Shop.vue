@@ -57,7 +57,7 @@ export default {
                 background-color: $bg-button-1;
                 padding: 5px 50px;
                 border-color: transparent;
-                color: black;
+                color: #000000;
                 font-size: 12px;
                 &:hover{
                     background-color: $secondary-color;

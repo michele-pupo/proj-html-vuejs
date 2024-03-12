@@ -57,7 +57,7 @@ export default {
             #more{
                 background-color: transparent;
                 border: 3px solid $secondary-color;
-                color: black;
+                color: #000000;
                 font-weight: bold;
                 text-transform: uppercase;
                 padding: 10px 40px;
@@ -66,7 +66,6 @@ export default {
                 &:hover{
                     background-color: $secondary-color;
                 }
-
             }
         }
     }
