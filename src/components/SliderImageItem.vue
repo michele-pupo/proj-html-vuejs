@@ -66,6 +66,8 @@ export default {
 </template>
   
 <style lang="scss" scoped>
+@use '../styles/_variables' as *;
+
     .slider {
         display: flex;
         width: 600px;
@@ -73,7 +75,7 @@ export default {
         button{
             z-index: 10;
             position: relative;
-            background-color: #e1c0b0;
+            background-color: $secondary-color;
             border: transparent;
             border-radius: 50%;
             padding: 10px 15px;
@@ -85,10 +87,20 @@ export default {
 
         .prev{
             right: 1300px;
+
+            &:hover{
+                background-color: $terziary-color;
+                cursor: pointer;
+            }
         }
 
         .next{
             left: 350px;
+
+            &:hover{
+                background-color: $terziary-color;
+                cursor: pointer;
+            }
         }
 
         .slides {
@@ -161,7 +173,7 @@ export default {
                 width: 10px;
                 height: 10px;
                 border-radius: 50%;
-                background-color: #e1c0b0;
+                background-color: $secondary-color;
                 margin: 0 10px;
                 cursor: pointer;
                 z-index: 10;
@@ -172,7 +184,7 @@ export default {
                 &.active{
                     width: 12px;
                     height: 12px;
-                    background-color: #e1c0b0;
+                    background-color: $secondary-color;
                 }
             }
         }

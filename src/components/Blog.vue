@@ -57,6 +57,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/_variables' as *;
+
     #container{
         position: relative;
 
@@ -64,7 +66,6 @@ export default {
             height: 550px;
 
             #blog-title{
-                margin-top: 130px;
 
                 h2{
                     font-size: 50px;
@@ -94,7 +95,7 @@ export default {
                         margin-bottom: 30px;
                         max-width: 150px;
                         height: 150px;
-                        background-color: #faf7f1;
+                        background-color: $fourth-color;
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -105,19 +106,19 @@ export default {
                             }
 
                             .fa-lightbulb{
-                                color: #BADAC9;
+                                color: $color-icon-1;
                             }
 
                             .fa-comment{
-                                color: #f8d12d;
+                                color: $color-icon-2;
                             }
 
                             .fa-cloud{
-                                color: #80465f;
+                                color: $color-icon-3;
                             }
 
                             .fa-pen-clip{
-                                color: #f0817b;
+                                color: $color-icon-4;
                             }
                     }
 
@@ -140,7 +141,7 @@ export default {
             width: 30px;
 
             img{
-                background-color: #c0e1cf;
+                background-color: $primary-color;
                 position: absolute;
                 bottom: 30px;
                 right: 20px;

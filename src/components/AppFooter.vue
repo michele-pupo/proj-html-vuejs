@@ -17,8 +17,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/_variables' as *;
+
     #footer{
         height: 230px;
-        background-color: #c0e1cf;
+        background-color: $primary-color;
     }
 </style>

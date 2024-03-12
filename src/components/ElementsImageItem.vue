@@ -35,6 +35,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/_variables' as *;
+
     #single-image{
         width: calc(100% / 3);
 
@@ -63,7 +65,7 @@ export default {
             flex-direction: column;
 
             #day{
-                background-color: #c0e1cf;
+                background-color: $primary-color;
                 width: 80px;
                 height: 50px;
                 text-align: center;
@@ -84,7 +86,7 @@ export default {
                 #month{
                     width: 120%; 
                     height: 50%; 
-                    background-color: #f3d0c7;
+                    background-color: $terziary-color;
                     padding-top: 5px;
                     position: absolute; 
                     bottom: 40; 

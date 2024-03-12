@@ -69,6 +69,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/_variables' as *;
+
     #container{
         position: relative;
 
@@ -81,9 +83,9 @@ export default {
             width: 30px;
 
             img{
-                background-color: #c0e1cf;
+                background-color: $primary-color;
                 position: absolute;
-                bottom: 30px;
+                bottom: 180px;
                 right: 20px;
                 padding: 10px;
             }
@@ -93,9 +95,9 @@ export default {
             width: 30px;
 
             img{
-                background-color: #c0e1cf;
+                background-color: $primary-color;
                 position: absolute;
-                bottom: 880px;
+                bottom: 1050px;
                 right: 20px;
                 padding: 10px;
             }
@@ -105,7 +107,7 @@ export default {
             width: 30px;
 
             img{
-                background-color: #fffff2;
+                background-color: $bg-img-1;
                 width: 45px;
                 position: absolute;
                 top: 210px;
@@ -118,7 +120,7 @@ export default {
             width: 30px;
 
             img{
-                background-color: #ee2852;
+                background-color: $bg-img-2;
                 width: 45px;
                 position: absolute;
                 top: 150px;

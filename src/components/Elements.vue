@@ -60,6 +60,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/_variables' as *;
+
     #container{
         position: relative;
 
@@ -76,7 +78,7 @@ export default {
             width: 30px;
 
             img{
-                background-color: #c0e1cf;
+                background-color: $primary-color;
                 position: absolute;
                 top: 30px;
                 right: 20px;

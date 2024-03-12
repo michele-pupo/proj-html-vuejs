@@ -28,6 +28,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/_variables' as *;
+
     #pages{
         margin: 0 auto;
         height: 700px;
@@ -54,12 +56,16 @@ export default {
 
             #more{
                 background-color: transparent;
-                border: 3px solid #e1c0b0;
+                border: 3px solid $secondary-color;
                 color: black;
                 font-weight: bold;
                 text-transform: uppercase;
                 padding: 10px 40px;
                 margin-top: 20px;
+
+                &:hover{
+                    background-color: $secondary-color;
+                }
 
             }
         }

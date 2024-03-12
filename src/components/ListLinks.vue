@@ -29,12 +29,14 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/_variables' as *;
+
     a{
         color: black;
         text-decoration: none;
 
         &:hover{
-            border-bottom: 8px solid #e1c0b0;
+            border-bottom: 8px solid $border-color;
             padding-bottom: 5px;
         }
     }

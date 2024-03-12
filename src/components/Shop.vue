@@ -19,6 +19,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/_variables' as *;
+
     #shop{
         height: 450px;
         background-image: url(../../public/img/h-2-background-1.jpg);
@@ -52,13 +54,13 @@ export default {
             margin-top: 30px;
             
             button{
-                background-color: #d8f0e3;
+                background-color: $bg-button-1;
                 padding: 5px 50px;
                 border-color: transparent;
                 color: black;
                 font-size: 12px;
                 &:hover{
-                    background-color: #e1c0b0;
+                    background-color: $secondary-color;
                 }
             }
         }
