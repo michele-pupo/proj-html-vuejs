@@ -4,14 +4,20 @@ export default {
 
     props:{
         image: String,
-        name: String
+        name: String,
+        titleoverlay: String,
+        textoverlay: String
     }
 };
 </script>
 
 <template>
     <div id="single-image">
-        <img :src="image" :alt="name">
+        <img :src="image" :alt="name" class="portfolio-image">
+        <div v-if="titleoverlay && textoverlay" id="text">
+            <h3> {{ titleoverlay }} </h3>
+            <h4><i>{{ textoverlay }}</i></h4>
+        </div>
     </div>
 </template>
 
@@ -21,6 +27,40 @@ export default {
 
         img{
             width: 100%;
+        }
+
+        .portfolio-image {
+            width: 100%;
+            transition: opacity 0.3s, filter 0.3s;
+
+            &:hover{
+                opacity: 0.5;
+                filter: brightness(0.8); 
+            }
+        }
+
+        #text{
+            width: 380px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: white;
+            position: relative;
+            top: -530px;
+            padding-left: 50px;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s;
+
+            h3{
+                font-size: 30px;
+            }
+        }
+
+        &:hover #text{
+            visibility: visible;
+            opacity: 1;
         }
     }
 </style>

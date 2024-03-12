@@ -23,7 +23,9 @@ export default {
                 },
                 {
                     "thumb": "../../public/img/h-2-port-img-4.jpg",
-                    "name": "h-2-port-img-4"
+                    "name": "h-2-port-img-4",
+                    "titleoverlay": "Illustrations of novels",
+                    "textoverlay": "Illustration"
                 },
                 {
                     "thumb": "../../public/img/h-2-port-img-5.jpg",
@@ -46,7 +48,9 @@ export default {
             <PortfolioImageItem
                 v-for="currentImage in images"
                 :image="currentImage.thumb"
-                :name="currentImage.name">
+                :name="currentImage.name"
+                :titleoverlay="currentImage.titleoverlay"
+                :textoverlay="currentImage.textoverlay">
             </PortfolioImageItem>
         </div>
         <div id="top">
