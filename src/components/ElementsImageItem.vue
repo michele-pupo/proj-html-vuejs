@@ -7,7 +7,7 @@ export default {
         name: String, 
         text: String,
         signature: String,
-        number: Number,
+        number: String,
         date: String
     }
 }

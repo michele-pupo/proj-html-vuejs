@@ -1,7 +1,10 @@
 <script>
+import Slider from './Slider.vue';
 
 export default {
     name: 'Pages',
+
+    components:{Slider}
 }
 </script>
 
@@ -19,7 +22,7 @@ export default {
             </button>
         </div>
         <div id="carousel">
-           
+           <Slider></Slider>
         </div>
     </div>
 </template>
