@@ -40,12 +40,12 @@ export default {
         }
 
         #text{
+            background-image: url(../../public/img/rbt-placeholder.jpg);
             width: 380px;
             height: 150px;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-color: #ffffff;
             position: relative;
             top: -530px;
             padding-left: 50px;
