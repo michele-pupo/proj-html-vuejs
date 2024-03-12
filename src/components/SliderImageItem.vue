@@ -19,12 +19,16 @@ export default {
         next() {
             if (this.currentIndex < this.images.length - 1) {
                 this.currentIndex++;
+            } else {
+                this.currentIndex = 0; // Se siamo all'ultima immagine, torna alla prima
             }
-        },
+            },
 
-        prev() {
+            prev() {
             if (this.currentIndex > 0) {
                 this.currentIndex--;
+            } else {
+                this.currentIndex = this.images.length - 1; // Se siamo alla prima immagine, vai all'ultima
             }
         },
 
@@ -37,7 +41,7 @@ export default {
 
 <template>
     <div class="slider">
-        <button class="prev" @click="prev" :disabled="currentIndex === 0">Prev</button>
+        <button class="prev" @click="prev" :disabled="currentIndex === 0"><i class="fa-solid fa-angle-left"></i></button>
         <div class="slides">
             <div v-for="(image, index) in images" :key="index" class="slide" v-show="index === currentIndex">
                 <div class="image-slide-container">
@@ -47,10 +51,12 @@ export default {
                     <img id="flower2" :src="image.flower2" alt="">
                     <img id="flower3" :src="image.flower3" alt="">
                     <img id="flower4" :src="image.flower4" alt="">
+                    <img id="flower5" :src="image.flower5" alt="">
+                    <img id="flower6" :src="image.flower6" alt="">
                 </div>
             </div>
         </div>
-        <button class="next" id="next" @click="next" :disabled="currentIndex === images.length - 1">Next</button>
+        <button class="next" id="next" @click="next" :disabled="currentIndex === images.length - 1"><i class="fa-solid fa-angle-right"></i></button>
         <div class="pagination">
             <span
                     v-for="(image, index) in images"
@@ -72,6 +78,14 @@ export default {
         button{
             z-index: 10;
             position: relative;
+            background-color: #e1c0b0;
+            border: transparent;
+            border-radius: 50%;
+            padding: 10px 15px;
+
+            i{
+                font-size: 20px;
+            }
         }
 
         .prev{
@@ -99,58 +113,71 @@ export default {
 
                     #principal1{
                          width: 100%;
-                         padding-left: 20px;
+                         position: relative;
+                         right: -100px;
                     }
 
-                    #flower1, #flower2, #flower3, #flower4{
+                    #flower1, #flower2, #flower3, #flower4, #flower5, #flower6{
                         width: 100%;
                         height: 100%;
                         position: relative;
                     }
 
                     #flower1{
-                        right: 740px;
+                        right: 680px;
                         top: 200px;
                     }
 
                     #flower2{
-                        right: 760px;
+                        right: 650px;
                         top: 350px;
                     }
 
                     #flower3{
                         right: 200px;
-                        top: 0px;
+                        top: -30px;
                     }
 
                     #flower4{
-                        right: 200px;
+                        right: 100px;
                         top: 300px;
+                    }
+
+                    #flower5{
+                        right: 850px;
+                        top: -50px;
+                    }
+
+                    #flower6{
+                        right: 320px;
+                        top: 70px;
                     }
                 }
             }
         }
-    }
 
-    button {
-        margin: 0 10px;
-    }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
 
-    .pagination {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
+            .dot {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #e1c0b0;
+                margin: 0 10px;
+                cursor: pointer;
+                z-index: 10;
+                position: relative;
+                top: 250px;
+                right: 750px;
 
-        .dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: #bbb;
-            margin: 0 5px;
-            cursor: pointer;
-
-            &.active{
-                background-color: #333;
+                &.active{
+                    width: 12px;
+                    height: 12px;
+                    background-color: #e1c0b0;
+                }
             }
         }
     }
