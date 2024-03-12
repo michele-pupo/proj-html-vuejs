@@ -123,5 +123,4 @@ export default {
             }
         }
     }
-    
-</style>./PortfolioImageItem.vue
+</style>

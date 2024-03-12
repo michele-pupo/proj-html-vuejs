@@ -1,4 +1,5 @@
 <script>
+import Pages from './Pages.vue';
 import Portfolio from './Portfolio.vue';
 import Blog from './Blog.vue';
 import Shop from './Shop.vue';
@@ -8,6 +9,7 @@ export default {
     name: 'AppMain',
 
     components: {
+        Pages,
         Portfolio,
         Blog,
         Shop,
@@ -18,6 +20,7 @@ export default {
 </script>
 
 <template>
+  <Pages></Pages>
   <Portfolio></Portfolio>
   <Blog></Blog>
   <Shop></Shop>
