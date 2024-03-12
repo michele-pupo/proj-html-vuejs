@@ -29,13 +29,16 @@ export default {
 
 <style lang="scss" scoped>
     #pages{
-        max-width: 1500px;
         margin: 0 auto;
         height: 630px;
         display: flex;
+        justify-content: space-evenly;
+        align-items: center;
 
         #title{
-            padding: 100px;
+            padding: 100px 0px;
+            max-width: 700px;
+            z-index: 0;
 
             h1{
                 font-size: 85px;

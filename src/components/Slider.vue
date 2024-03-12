@@ -10,13 +10,26 @@ export default {
         return {
             images: [
                 {
-                    "thumb": "../../public/img/h-2-slider-img-15.png",
+                    "imageprincipal1": "../../public/img/h-2-slider-img-15.png",
+                    "imageprincipal2": "../../public/img/h-2-slider-img-16.png",
+                    "flower1": "../../public/img/h-2-slider-img-12.png",
+                    "flower2": "../../public/img/h-2-slider-img-13.png",
+                    "flower3": "../../public/img/h-2-slider-img-14.png",
+                    "flower4": "../../public/img/h-2-slider-img-17.png"
                 },
                 {
-                    "thumb": "../../public/img/h-2-slider-img-16.png",
+                    "imageprincipal1": "../../public/img/h-2-slider-img-11.png",
+                    "flower1": "../../public/img/h-2-slider-img-12.png",
+                    "flower2": "../../public/img/h-2-slider-img-13.png",
+                    "flower3": "../../public/img/h-2-slider-img-14.png",
+                    "flower4": "../../public/img/h-2-slider-img-17.png"
                 },
                 {
-                    "thumb": "../../public/img/h-2-slider-img-17.png",
+                    "imageprincipal1": "../../public/img/short-slider-rev-1-img-3.png",
+                    "flower1": "../../public/img/h-2-slider-img-12.png",
+                    "flower2": "../../public/img/h-2-slider-img-13.png",
+                    "flower3": "../../public/img/h-2-slider-img-14.png",
+                    "flower4": "../../public/img/h-2-slider-img-17.png"
                 }
             ]
         };
