@@ -38,9 +38,7 @@ export default {
         align-items: center;
 
         #title{
-            padding: 100px 0px;
             max-width: 700px;
-            z-index: 0;
 
             h1{
                 font-size: 85px;

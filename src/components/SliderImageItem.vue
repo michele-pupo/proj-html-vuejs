@@ -70,7 +70,7 @@ export default {
 
     .slider {
         display: flex;
-        width: 600px;
+        max-width: 1450px;
 
         button{
             z-index: 10;
@@ -86,7 +86,7 @@ export default {
         }
 
         .prev{
-            right: 1300px;
+            right: 1680px;
 
             &:hover{
                 background-color: $terziary-color;
@@ -95,7 +95,7 @@ export default {
         }
 
         .next{
-            left: 350px;
+            right: -550px;
 
             &:hover{
                 background-color: $terziary-color;
@@ -109,7 +109,7 @@ export default {
 
             .slide {
                 width: 100%;
-                transition: opacity 0.5s ease;
+                transition: opacity 0.8s ease;
 
                 .image-slide-container{
                     display: flex;
@@ -137,12 +137,12 @@ export default {
                     }
 
                     #flower2{
-                        right: 650px;
+                        right: 700px;
                         top: 350px;
                     }
 
                     #flower3{
-                        right: 200px;
+                        right: 280px;
                         top: -30px;
                     }
 
@@ -152,7 +152,7 @@ export default {
                     }
 
                     #flower5{
-                        right: 850px;
+                        right: 880px;
                         top: -50px;
                     }
 
