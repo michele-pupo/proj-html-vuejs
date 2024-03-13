@@ -21,8 +21,8 @@ export default {
                 },
                 {
                     "imageprincipal1": "../../public/img/h-2-slider-img-11.png",
-                    "flower1": "../../public/img/h-2-slider-img-12.png",
-                    "flower2": "../../public/img/h-2-slider-img-13.png",
+                    "flower1": "../../public/img/h-2-slider-img-13.png",
+                    "flower2": "../../public/img/h-2-slider-img-12.png",
                     "flower3": "../../public/img/short-slider-rev-1-img-6.png",
                     "flower4": "../../public/img/h-2-slider-img-17.png",
                     "flower5": "../../public/img/short-slider-rev-1-img-2.png",

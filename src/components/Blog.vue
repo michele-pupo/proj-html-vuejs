@@ -51,7 +51,7 @@ export default {
             </div>
         </div>
         <div id="top">
-            <img src="../../public/svg/svg-2.svg" alt="">
+            <img src="../../public/img/svg-2.svg" alt="">
         </div>
     </div>
 </template>
@@ -63,7 +63,7 @@ export default {
         position: relative;
 
         #blog{
-            height: 550px;
+            height: 630px;
 
             #blog-title{
 
@@ -83,7 +83,7 @@ export default {
                 margin: 0 auto;
                 display: flex;
                 gap: 30px;
-                background-image: url(../../public/svg/svg-3.svg);
+                background-image: url(../../public/img/svg-3.svg);
                 background-size: 85%;
                 background-repeat: no-repeat;
                 background-position: 50% 40%;
@@ -149,6 +149,10 @@ export default {
                 bottom: 30px;
                 right: 20px;
                 padding: 10px;
+                &:hover{
+                    opacity: 0.6;
+                    cursor: pointer;
+                }
             }
         }
     }

@@ -24,7 +24,7 @@ export default {
                 <a href="#">{{ currentLink }}</a>
             </li>
         </ul>
-        <img src="../../public/svg/svg-1.svg" alt="">
+        <img src="../../public/img/svg-1.svg" alt="">
     </div>
 </template>
 
@@ -35,6 +35,7 @@ export default {
         color: #000000;
         text-decoration: none;
         text-transform: uppercase;
+        font-weight: 600;
 
         &:hover{
             border-bottom: 8px solid $border-color;

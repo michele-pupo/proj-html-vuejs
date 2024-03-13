@@ -22,7 +22,7 @@ export default {
 @use '../styles/_variables' as *;
 
     #shop{
-        height: 450px;
+        height: 520px;
         background-image: url(../../public/img/h-2-background-1.jpg);
         background-position: 0% 30%;
         background-repeat: no-repeat;
@@ -54,7 +54,7 @@ export default {
         #button{
             display: flex;
             justify-content: center;
-            margin-top: 30px;
+            margin-top: 40px;
             
             button{
                 background-color: $bg-button-1;

@@ -22,7 +22,7 @@ export default {
             } 
         },
 
-            prev() {
+        prev() {
             if (this.currentIndex > 0) {
                 this.currentIndex--;
             } 
@@ -113,13 +113,19 @@ export default {
 
                 .image-slide-container{
                     display: flex;
-                    gap: 10px;
+                    gap: 20px;
                     position: absolute;
-                    top: 160px;
+                    top: 180px;
                     right: 50px;
                     z-index: 0;
 
                     #principal1{
+                         width: 100%;
+                         position: relative;
+                         right: -120px;
+                    }
+
+                    #principal2{
                          width: 100%;
                          position: relative;
                          right: -100px;
@@ -132,27 +138,27 @@ export default {
                     }
 
                     #flower1{
-                        right: 680px;
+                        right: 650px;
                         top: 200px;
                     }
 
                     #flower2{
-                        right: 700px;
+                        right: 750px;
                         top: 350px;
                     }
 
                     #flower3{
-                        right: 280px;
+                        right: 170px;
                         top: -30px;
                     }
 
                     #flower4{
-                        right: 100px;
+                        right: 150px;
                         top: 300px;
                     }
 
                     #flower5{
-                        right: 880px;
+                        right: 920px;
                         top: -50px;
                     }
 
@@ -178,12 +184,12 @@ export default {
                 cursor: pointer;
                 z-index: 10;
                 position: relative;
-                top: 250px;
+                top: 300px;
                 right: 750px;
 
                 &.active{
-                    width: 12px;
-                    height: 12px;
+                    width: 13px;
+                    height: 13px;
                     background-color: $secondary-color;
                 }
             }

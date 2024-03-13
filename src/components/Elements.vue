@@ -53,7 +53,7 @@ export default {
             </ElementsImageItem>
         </div>
         <div id="top">
-            <img src="../../public/svg/svg-2.svg" alt="">
+            <img src="../../public/img/svg-2.svg" alt="">
         </div>
     </div>
 
@@ -64,6 +64,7 @@ export default {
 
     #container{
         position: relative;
+        height: 710px;
 
         #image-list{
             width: 1300px;
@@ -82,6 +83,10 @@ export default {
                 top: 30px;
                 right: 20px;
                 padding: 10px;
+                &:hover{
+                    opacity: 0.6;
+                    cursor: pointer;
+                }
             }
         }
     }

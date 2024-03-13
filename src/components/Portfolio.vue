@@ -54,16 +54,16 @@ export default {
             </PortfolioImageItem>
         </div>
         <div id="top">
-            <img src="../../public/svg/svg-2.svg" alt="">
+            <img src="../../public/img/svg-2.svg" alt="">
         </div>
         <div id="top-2">
-            <img src="../../public/svg/svg-2.svg" alt="">
+            <img src="../../public/img/svg-2.svg" alt="">
         </div>
         <div id="cart">
-            <img src="../../public/svg/svg-6.svg" alt="">
+            <img src="../../public/img/svg-6.svg" alt="">
         </div>
         <div id="logo">
-            <img src="../../public/svg/svg-4.svg" alt="">
+            <img src="../../public/img/svg-4.svg" alt="">
         </div>
     </div>
 </template>
@@ -88,6 +88,10 @@ export default {
                 bottom: 180px;
                 right: 20px;
                 padding: 10px;
+                &:hover{
+                    opacity: 0.6;
+                    cursor: pointer;
+                }
             }
         }
 
@@ -100,6 +104,10 @@ export default {
                 bottom: 1050px;
                 right: 20px;
                 padding: 10px;
+                &:hover{
+                    opacity: 0.6;
+                    cursor: pointer;
+                }
             }
         }
 
@@ -113,6 +121,10 @@ export default {
                 top: 210px;
                 right: 0;
                 padding: 10px;
+                &:hover{
+                    opacity: 0.6;
+                    cursor: pointer;
+                }
             }
         }
 
@@ -126,6 +138,10 @@ export default {
                 top: 150px;
                 right: 0;
                 padding: 10px;
+                &:hover{
+                    opacity: 0.6;
+                    cursor: pointer;
+                }
             }
         }
     }
