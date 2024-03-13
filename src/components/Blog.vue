@@ -68,11 +68,13 @@ export default {
             #blog-title{
 
                 h2{
-                    font-size: 50px;
+                    font-size: 70px;
+                    font-weight: 300;
                 }
 
                 i{
-                    font-weight: bold;
+                    font-family: 'Playball', sans-serif;
+                    font-size: 90px;
                 }
             }
         
@@ -131,6 +133,7 @@ export default {
 
                         p{
                             font-size: 15px;
+                            color: $text-color-secondary;
                         }
                     }
                 }

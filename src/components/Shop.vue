@@ -24,7 +24,7 @@ export default {
     #shop{
         height: 450px;
         background-image: url(../../public/img/h-2-background-1.jpg);
-        background-position: 0% 25%;
+        background-position: 0% 30%;
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -35,16 +35,19 @@ export default {
             text-align: center;
 
             h2{
-                font-size: 50px;
-                padding-bottom: 30px;
+                font-size: 70px;
+                padding-bottom: 20px;
+                font-weight: 300;
 
                 i{
-                    font-weight: bold;
+                    font-family: 'Playball', sans-serif;
+                    font-size: 90px;
                 }
             }
 
             p{
-                font-size: 15px;
+                font-size: 19px;
+                color: $text-color-secondary;
             }
         }
 
@@ -55,10 +58,12 @@ export default {
             
             button{
                 background-color: $bg-button-1;
-                padding: 5px 50px;
+                padding: 10px 50px;
                 border-color: transparent;
                 color: #000000;
                 font-size: 12px;
+                text-transform: uppercase;
+                font-weight: bold;
                 &:hover{
                     background-color: $secondary-color;
                 }

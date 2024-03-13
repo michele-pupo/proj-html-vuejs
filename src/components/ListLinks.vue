@@ -34,6 +34,7 @@ export default {
     a{
         color: #000000;
         text-decoration: none;
+        text-transform: uppercase;
 
         &:hover{
             border-bottom: 8px solid $border-color;

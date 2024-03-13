@@ -42,23 +42,28 @@ export default {
 
             h1{
                 font-size: 85px;
+                font-weight: 300;
+                line-height: 1;
 
                 i{
-                    font-weight: bold;
+                    font-family: 'Playball', sans-serif;
+                    font-size: 110px;
                 }
             }
 
             p{
                 font-size: 22px;
+                color: $text-color-secondary;
             }
 
             #more{
                 background-color: transparent;
                 border: 3px solid $secondary-color;
                 color: #000000;
+                font-size: 13px;
                 font-weight: bold;
                 text-transform: uppercase;
-                padding: 10px 40px;
+                padding: 15px 40px;
                 margin-top: 20px;
 
                 &:hover{

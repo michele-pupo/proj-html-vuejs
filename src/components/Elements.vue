@@ -71,7 +71,6 @@ export default {
             display: flex;
             gap: 30px;
             padding: 150px 0px 10px 0px;
-            
         }
 
         #top{

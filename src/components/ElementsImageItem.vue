@@ -68,11 +68,13 @@ export default {
                 background-color: $primary-color;
                 width: 80px;
                 height: 50px;
-                text-align: center;
-                padding-top: 5px;
+                padding-top: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 
                 h5{
-                    font-size: 38px;
+                    font-size: 40px;
                     font-family: 'Playball', sans-serif;
                 }
             }
@@ -93,6 +95,11 @@ export default {
                     bottom: 40; 
                     right: 0; 
                     clip-path: polygon(15% 0%, 85% 0%, 85% 80%, 50% 60%, 15% 80%);
+
+                    h6{
+                        font-weight: bold;
+                        font-size: 15px;
+                    }
                 }
             }
         }
